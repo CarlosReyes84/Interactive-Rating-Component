@@ -1,0 +1,46 @@
+@use './../main/variables' as *;
+
+.card {
+    width: 35rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: $dark-blue;
+    padding: 3rem;
+    img {
+        padding: 1rem;
+        border-radius: 2rem;
+        background-color: rgba($light-grey, .1);
+    }
+    h1 {
+        color: white;
+        margin: 1.5rem 0rem;
+    }
+    .buttons {
+        margin: 3rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        button {
+            width: 4rem;
+            height: 4rem;
+            border: none;
+            border-radius: 50%;
+            background-color: rgba($light-grey, .1);
+            color: $medium-grey;
+            &:hover {
+                background-color: rgba($light-grey, .5);
+                color: white;
+            }
+        }
+    }
+    .submit {
+        width: 100%;
+        padding: 1.3rem 0rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        border-radius: 2rem;
+        border: none;
+        color: #fff;
+        background-color: $orange;
+        font-weight: bold;
+    }
+}

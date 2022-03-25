@@ -10,6 +10,9 @@ body {
   margin: 0;
   height: 100vh;
   background-color: #121417;
+  display: grid;
+  place-content: center;
+  font-family: "Overpass", sans-serif;
 }
 
 p,
@@ -23,7 +26,63 @@ img {
   max-width: 100%;
 }
 
-/*input,
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: #959eac;
+  line-height: 2.3rem;
+}
+
+input,
 button {
-    font-family: inherit;
-}*/
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.card {
+  width: 35rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background-color: #252d37;
+  padding: 3rem;
+}
+.card img {
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: rgba(149, 158, 172, 0.1);
+}
+.card h1 {
+  color: white;
+  margin: 1.5rem 0rem;
+}
+.card .buttons {
+  margin: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card .buttons button {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(149, 158, 172, 0.1);
+  color: #7c8798;
+}
+.card .buttons button:hover {
+  background-color: rgba(149, 158, 172, 0.5);
+  color: white;
+}
+.card .submit {
+  width: 100%;
+  padding: 1.3rem 0rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  background-color: #fb7413;
+  font-weight: bold;
+}

@@ -10,6 +10,9 @@ body {
     margin: 0;
     height: 100vh;
     background-color: $very-dark-blue;
+    display: grid;
+    place-content: center;
+    font-family: 'Overpass', sans-serif;
 }
 p,
 h1,
@@ -20,8 +23,17 @@ h3 {
 img {
     max-width: 100%
 }
-/*input,
+h1 {
+    font-size: 2.5rem;
+}
+p {
+    font-size: 1.4rem;
+    color: $light-grey;
+    line-height: 2.3rem;
+}
+input,
 button {
     font-family: inherit;
-}*/
+    cursor: pointer;
+}
 
