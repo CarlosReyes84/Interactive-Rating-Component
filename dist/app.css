@@ -13,6 +13,12 @@ body {
   display: grid;
   place-content: center;
   font-family: "Overpass", sans-serif;
+  padding: 0rem 1.5rem;
+}
+@media (min-width: 777px) {
+  body {
+    padding: 0;
+  }
 }
 
 p,
@@ -43,9 +49,8 @@ button {
 }
 
 .card {
-  width: 35rem;
-  margin: 0 auto;
-  border-radius: 1rem;
+  max-width: 40rem;
+  border-radius: 2rem;
   background-color: #252d37;
   padding: 3rem;
 }
@@ -70,14 +75,16 @@ button {
   border-radius: 50%;
   background-color: rgba(149, 158, 172, 0.1);
   color: #7c8798;
+  transition: 0.2s linear all;
 }
 .card .buttons button:hover {
   background-color: rgba(149, 158, 172, 0.5);
   color: white;
+  transition: 0.2s linear all;
 }
 .card .submit {
   width: 100%;
-  padding: 1.3rem 0rem;
+  padding: 1.1rem 0rem;
   font-size: 1.5rem;
   text-transform: uppercase;
   border-radius: 2rem;
@@ -85,4 +92,10 @@ button {
   color: #fff;
   background-color: #fb7413;
   font-weight: bold;
+  transition: 0.2s linear all;
+}
+.card .submit:hover {
+  background-color: #fff;
+  color: #fb7413;
+  transition: 0.2s linear all;
 }

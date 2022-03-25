@@ -1,9 +1,8 @@
 @use './../main/variables' as *;
 
 .card {
-    width: 35rem;
-    margin: 0 auto;
-    border-radius: 1rem;
+    max-width: 40rem;
+    border-radius: 2rem;
     background-color: $dark-blue;
     padding: 3rem;
     img {
@@ -26,15 +25,17 @@
             border-radius: 50%;
             background-color: rgba($light-grey, .1);
             color: $medium-grey;
+            transition: 0.2s linear all;
             &:hover {
                 background-color: rgba($light-grey, .5);
                 color: white;
+                transition: 0.2s linear all;
             }
         }
     }
     .submit {
         width: 100%;
-        padding: 1.3rem 0rem;
+        padding: 1.1rem 0rem;
         font-size: 1.5rem;
         text-transform: uppercase;
         border-radius: 2rem;
@@ -42,5 +43,11 @@
         color: #fff;
         background-color: $orange;
         font-weight: bold;
+        transition: 0.2s linear all;
+        &:hover {
+            background-color: #fff;
+            color: $orange;
+            transition: 0.2s linear all;
+        }
     }
 }
