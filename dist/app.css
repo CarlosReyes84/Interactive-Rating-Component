@@ -48,6 +48,11 @@ button {
   cursor: pointer;
 }
 
+.orange {
+  background-color: #fb7413 !important;
+  color: #fff !important;
+}
+
 .card {
   max-width: 40rem;
   border-radius: 2rem;
