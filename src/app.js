@@ -1,16 +1,16 @@
 
 const btnSub = document.querySelector('.submit');
-let buttons = document.querySelectorAll('.button');
+const buttons = document.querySelectorAll('.button');
 
 buttons.forEach(x => {
     x.addEventListener('click', e => {
-        const actual = document.querySelector('.orange');
+        const actual = e.target;
 
 
         //remove
-        actual.classList.remove('orange')
+        buttons.forEach(x => x.classList.remove('orange'))
 
         //add
-        e.target.classList.add('orange')
+        actual.classList.add('orange')
     })
 })
