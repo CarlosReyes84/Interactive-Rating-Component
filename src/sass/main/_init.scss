@@ -46,3 +46,14 @@ button {
     background-color: $orange !important;
     color: #fff !important;
 }
+.alert {
+    background-color: red;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border-radius: 2rem;
+    text-align: center;
+    p {
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+}
