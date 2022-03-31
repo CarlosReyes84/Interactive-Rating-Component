@@ -32,7 +32,6 @@ function toggleClass(e) {
 function rating(e) {
     e.preventDefault()
     if(actualRating == 0) {
-        console.log('you should score')
         const alert = document.createElement('DIV')
         const message = document.createElement('P')
         message.textContent = 'Please rate!'
@@ -45,14 +44,14 @@ function rating(e) {
             alert.remove()
         }, 2000)
     }else {
-        text.textContent = "We appreciate you taking the time to give a rating. If you ever need more support, dont hesitate to get in touch!"
-        console.log(actualRating)
-
-        //remove buttons
-        image.src = './images/illustration-thank-you.svg'
-        title.textContent = 'Thank You!'
-        buttons.forEach(x => x.remove())
-        btnSub.remove()
+        card.classList.add('container')
+        card.innerHTML = `<img class="image" src="./images/illustration-thank-you.svg" alt="image-thank-you">
+        <div class ="alert-rating">
+            <p>You selected ${actualRating} out of 5</p>
+        </div>
+        <h1 class="tittle">Thank You!</h1>
+        <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, dont hesitate to get in touch!</p>
+`
     }
     
 }

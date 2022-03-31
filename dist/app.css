@@ -33,11 +33,11 @@ img {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #959eac;
   line-height: 2.3rem;
 }
@@ -65,10 +65,25 @@ button {
   font-weight: bold;
 }
 
+.alert-rating {
+  background-color: rgba(18, 20, 23, 0.5);
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  margin: 1rem 0rem;
+}
+.alert-rating p {
+  color: #fb7413;
+}
+
+.container {
+  text-align: center;
+}
+
 .card {
   max-width: 40rem;
   border-radius: 2rem;
-  background-color: #252d37;
+  background: linear-gradient(25deg, #171e28, #1f2630);
   padding: 3rem;
 }
 .card img {

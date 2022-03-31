@@ -29,10 +29,10 @@ img {
     max-width: 100%
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: $light-grey;
     line-height: 2.3rem;
 }
@@ -56,4 +56,17 @@ button {
         font-size: 1.7rem;
         font-weight: bold;
     }
+}
+.alert-rating {
+    background-color: rgba($very-dark-blue, .5);
+    display: inline-block;
+    padding: .6rem 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0rem;
+    p {
+        color: $orange;
+    }
+}
+.container {
+    text-align: center;
 }
