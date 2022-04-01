@@ -78,6 +78,7 @@ button {
 
 .container {
   text-align: center;
+  animation: slice 1s ease;
 }
 
 .card {
@@ -130,4 +131,13 @@ button {
   background-color: #fff;
   color: #fb7413;
   transition: 0.2s linear all;
+}
+
+@keyframes slice {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
